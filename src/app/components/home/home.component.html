@@ -1,0 +1,46 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+
+  <div class="container">
+    <h1 class="display-3">Toures Balon</h1>
+    <p class="lead">La mejor experiencia en tus espectaculos deportivos</p>
+  </div>
+
+</div>
+
+
+<!-- -->
+
+<div *ngIf="true" class="row m-5">
+  <div class="col">
+
+  <a [routerLink]="['../profile']">Editar datos personales</a>
+
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>Orden</th>
+          <th>Estado</th>
+          <th>item1</th>
+          <th>item2</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Orden1</td>
+          <td>Estado1</td>
+          <td>item1</td>
+          <td>item2</td>
+          <td>
+            <button (click)="lookOrder()" type="button" class="btn btn-outline-primary btn-block active">
+              Detalle
+            </button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>

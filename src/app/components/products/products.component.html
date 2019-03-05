@@ -1,0 +1,11 @@
+<h1>Productos <small>Toures Balon</small></h1>
+<hr>
+
+
+<div class="card-columns">
+
+<!-- *ngFor="let heroe of heroes; let i = index" -->
+   <app-product-card (productSeleccionado)="verProduct( $event )" [product]="foo" [index]="i"  *ngFor="let foo of products; let i = index"></app-product-card> 
+
+
+</div>

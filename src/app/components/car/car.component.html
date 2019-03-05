@@ -1,0 +1,42 @@
+<div class="row m-5">
+  <div class="col">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Espectaculo</th>
+          <th>Fecha llegada</th>
+          <th>Fecha salida</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let product of  productsService.car">
+          <td>
+            <img [src]="product.img" class="img-thumb">
+          </td>
+          <td>{{ product.espectaculo }}</td>
+          <td>{{ product.fecha_llegada | date }}</td>
+          <td>{{ product.fecha_salida | date }}</td>
+          <td>
+            <button (click)="delete(product)" type="button" class="btn btn-outline-danger btn-block active">
+            Eliminar
+            </button> 
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+<button (click)="cleanCar()" type="button" class="btn btn-outline-danger btn-block active">
+  Vaciar carrito
+</button>
+
+<button (click)="confirm()" type="button" class="btn btn-outline-primary btn-block active" *ngIf="!this.productsService.car.length==0">
+  Confirmar
+</button>
+
+  </div>
+</div>

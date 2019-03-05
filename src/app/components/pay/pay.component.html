@@ -1,0 +1,44 @@
+<div class="container">
+
+  <div class="row justify-content-md-center">
+
+    <form class="col-md-6 ">
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="numeroT">Numero tarjeta:</label>
+          <input type="number" class="form-control" id="numeroT">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="nombreT">Nombre en tarjeta:</label>
+          <input type="text" class="form-control" id="nombreT">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="vencimientoT">Vencimiento tarjeta:</label>
+          <input type="text" class="form-control" id="vencimientoT" placeholder="mm/aaaa">
+        </div>
+      </div>
+
+
+       <div class="row">
+        <div class="form-group col-md-12">
+          <label for="cvvT">CVV:</label>
+          <input type="number" class="form-control" id="cvvT">
+        </div>
+      </div>
+
+
+      <button (click)="toPay()" type="button" class="btn btn-outline-primary btn-block active">
+        Pagar
+      </button>
+
+    </form>
+
+  </div>
+</div>

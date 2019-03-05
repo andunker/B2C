@@ -1,0 +1,84 @@
+<div class="container">
+
+  <div class="row justify-content-md-center">
+
+    <form class="col-md-6 ">
+
+      <div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="nombres">Nombres:</label>
+            <input type="text" class="form-control" id="nombres">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" id="apellidos">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="email">Correo:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="password">Password antiguo:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+          <div class="form-group col-md-12">
+            <label for="password">Password nuevo:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+        </div>
+
+
+      <div *ngIf="false">
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="numeroT">Numero tarjeta:</label>
+            <input type="number" class="form-control" id="numeroT">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="nombreT">Nombre en tarjeta:</label>
+            <input type="text" class="form-control" id="nombreT">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="vencimientoT">Vencimiento tarjeta:</label>
+            <input type="text" class="form-control" id="vencimientoT" placeholder="mm/aaaa">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="cvvT">CVV:</label>
+            <input type="number" class="form-control" id="cvvT">
+          </div>
+        </div>
+
+      </div>
+
+      <button (click)="updateProfile()" type="button" class="btn btn-outline-primary btn-block active">
+        actualizar
+      </button>
+    </form>
+
+  </div>
+</div>
